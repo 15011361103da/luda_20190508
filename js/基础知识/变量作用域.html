@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>变量作用域</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  var a=0;
+  function f(a) {
+    alert(a);   //输出undefined
+    a=3;
+    alert(a)   //输出3
+  }
+  f();
+  alert(a);  //输出0
+</script>
