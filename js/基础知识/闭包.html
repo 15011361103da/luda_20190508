@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>闭包</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  /**
+   * 因为函数add外的变量s引用了函数add内的函数b。也就是说，当函数add的内部函数b被函数add外的一个变量引用的时候，就创建了一个闭包。
+   *
+   * 概念：闭包就是能够读取其他函数内部变量的函数。例如在javascript中，只有函数内部的子函数才能读取局部变量，
+   * 所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。
+   *
+   * @type {number}
+   */
+  var count = 10;
+  function add() {
+    var count = 0;
+    return function b() {
+      count += 1;
+      alert(count);
+    }
+  }
+  var s = add();  //此处返回的是一个函数
+  s(); //调用返回的函数（也就是add内的函数被调用)
+  s();
+
+</script>
