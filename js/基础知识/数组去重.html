@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  var arr = [1,1,1,1,2,1,1,1,1,2,1,1,12,2,2,2,34,23,];
+  var arrNew = [];
+  //console.log(arr.indexOf(124));
+  for(var i = 0;i<arr.length;i++){
+    //console.log(arr[i]);
+    if(arr.indexOf(arr[i]) == i){   //indexOf方法可返回数组中某个指定的元素位置
+      arrNew.push(arr[i]);
+    }
+  }
+  arr = arrNew;
+  console.log(arr);
+
+</script>
