@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>变量作用域-2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  //面试题一：
+  var a=2,b={c:3};
+  d=b;
+  b.c=4;
+  b.e=function () {
+    a=5;
+  };
+  console.log(d);
+  b.e();
+  console.log(a);
+
+  //面试题二(经典)
+  //异步、作用域、闭包
+  for(var i=1;i<3;i++){
+    setTimeout(function () {   //setTimeout为异步，循环结束以后才会执行！
+      console.log(i);  //打印两次3！
+    },0)
+  }
+</script>
