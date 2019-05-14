@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25eb19cd-2ee4-4aa8-9b9f-1e70ace59c6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/火星时代/变量.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/responsive一级拆分.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/responsive一级拆分.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/高德地图.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/高德地图.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/高德地图.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/responsive一级拆分.html">
+        <entry file="file://$PROJECT_DIR$/js/火星时代/变量.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="230">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -62,10 +52,11 @@
         <option value="$PROJECT_DIR$/js/基础知识/变量作用域-2.html" />
         <option value="$PROJECT_DIR$/html/高德地图.html" />
         <option value="$PROJECT_DIR$/html/responsive一级拆分.html" />
+        <option value="$PROJECT_DIR$/js/火星时代/变量.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -77,6 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,11 +81,21 @@
               <item name="luda" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="luda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luda" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luda" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="火星时代" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,11 +158,12 @@
       <workItem from="1557588992586" duration="1239000" />
       <workItem from="1557704670372" duration="1573000" />
       <workItem from="1557750119291" duration="3284000" />
+      <workItem from="1557797796748" duration="5917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58120000" />
+    <option name="totallyTimeSpent" value="64037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -285,6 +288,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/responsive一级拆分.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/高德地图.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -292,10 +302,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/responsive一级拆分.html">
+    <entry file="file://$PROJECT_DIR$/js/火星时代/变量.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="230">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+</head>
+<body>
+  <p>luda
+
+  <p>asdsda</p>
+  </p>
+  <script>
+    /*js数据类型：Number数字类型、String字符串类型、Boolean布尔类型、undefined*/
+    //未赋值则为undefined！
+    var age;
+    console.log(age);
+    //typeof来确定变量的类型
+    console.log(typeof age);  //undefined
+    age = 10;
+    console.log(typeof age);  //number
+    age = "";
+    console.log(typeof age);  //string
+    age = true;
+    console.log(typeof age);  //boolean
+    age = null;
+    console.log(typeof age);  //object
+    age = "a"*1;   //非法的数字
+    console.log(age);  //NaN   NaN不属于数据类型，这只是一个值。
+    console.log(typeof age);
+
+    age = 18;
+    console.log(age % 4);  //取模，求余数。
+    //当字符串 遇到* - / %时，会将合法的字符串转换为数字类型(隐式转换)，否则将返回NaN ！
+    age = '15a'; //如果age为15则返回10；
+    console.log(age - 5);
+    //parseInt()方法；强制转换，把字符串转换成整数；
+    var a = 20;
+    var b = '120';
+    console.log(typeof parseInt(b));
+    console.log(parseInt('16pxasd123'));  //parseInt()遇到不是数字的时候将停止，只取数字部分。、
+    console.log(parseInt('px123')); //如果第一个都不是数字，则返回NaN.
+    console.log(5/2);
+    console.log(true + 1); //true参加运算的话，会隐式转换为1. false:0
+
+  </script>
+</body>
+</html>
