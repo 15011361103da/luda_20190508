@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>浮动的影响</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .wrap{
+      background-color: #cccccc;
+    }
+
+    .box1{
+      width: 150px;
+      height: 100px;
+      background-color: #5963ec;
+      float: left;
+    }
+    .box2{
+      width: 200px;
+      height: 150px;
+      background-color: red;
+      float: left;
+    }
+    /*清除浮动的方法一：给父元素添加after和zoom；推荐使用这种*/
+    /*.wrap:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+    .wrap{zoom:1}*/
+    /*清除浮动的方法二：浮动元素尾部添加一个块级元素，设置clear：both；*/
+    .box3{
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+</body>
+</html>
