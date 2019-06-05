@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ES6数组新特性---find（）</title>
+  <script src="./jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<script>
+  $(document).ready(function(){
+    /*
+    * 数组实例的find()方法，用于找出第一个符合条件的数组成员。它的参数是一个回调函数，所有数组成员依次执行该回调函数，
+    * 直到找出第一个返回值为true的成员，然后返回该成员。如果没有符合条件的成员，则返回undefined。
+    */
+    var arr = [4, 9, 16, 18, 29];
+    //数组的findIndex（）和find相似，只不过findIndex（）返回的是符合条件的元素的下标。
+    console.log(arr.find(myFunction));
+    function myFunction(value, index, array) {
+      //return value > 29;  //返回undefined
+      console.log(index);   //依次输出每个元素下标
+      console.log(array);   //数组本身
+      return value  > 12;
+    }
+
+  })
+</script>
+</body>
+</html>

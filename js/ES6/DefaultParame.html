@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>函数的默认参数值</title>
+  <script src="./jquery-3.4.1.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+
+  $(document).ready(function(){
+    /*ES6新特性：默认参数值----例：test方法的y=10意思就是如果调用test方法没有传y值，则默认y等于10*/
+    function test(x,y=10){
+      return x+y;
+    }
+    console.log(test(5))   //此处没有传y值，则默认y等于10，结果输出15
+  });
+</script>
+</html>

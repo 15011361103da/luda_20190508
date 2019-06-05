@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ES6---箭头函数</title>
+  <script src="./jquery-3.4.1.js"></script>
+</head>
+<body>
+  <script>
+    /*
+    * 箭头功能没有自己的 this。它们不适合定义对象方法。箭头功能未被提升。它们必须在使用前进行定义。
+    * 使用 const 比使用 var 更安全，因为函数表达式始终是常量值。如果函数是单个语句，则只能省略 return 关键字和花括号。
+    * 因此，保留它们可能是一个好习惯：
+    */
+    $(document).ready(function () {
+      var test = x => x+1;
+      console.log(test(5));
+    })
+  </script>
+</body>
+</html>

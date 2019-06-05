@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number新增的方法---判断一个数字是否是整数</title>
+  <script src="./jquery-3.4.1.js"></script>
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+      //如果参数是整数，则 Number.isInteger() 方法返回 true。
+      var isInteger = Number.isInteger(9007199254740990);
+      //Number.isSafeInteger() 方法
+      //安全整数是可以精确表示为双精度数的整数
+      console.log(isInteger);
+
+    })
+  </script>
+</body>
+</html>
