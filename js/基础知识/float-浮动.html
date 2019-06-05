@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>浮动的影响</title>
+  <style>
+    .box1{
+      width: 50px;
+      height: 30px;
+      background-color: #3b4664;
+      position: absolute;
+      top: 20px;
+      left: 50px;
+    }
+
+    /*子元素如果使用了position: absolute;则父元素一般使用position: relative;会使子元素相对于父元素定位，否则子元素会相对于浏览器定位，*/
+    .wrap{
+      float: right;
+      position: relative;
+      background-color: #cccccc;
+      width: 500px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box1"></div>
+  </div>
+</body>
+</html>
