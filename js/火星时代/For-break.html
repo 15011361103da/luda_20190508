@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for循环break</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  var arr = [1,321,4151,152,"55"]
+  /*for (var i = 0;i< arr.length;i++) {
+    console.log(arr[i]);
+    if(i == 3){
+      continue//结束本次循环，进入下一次循环
+    }
+    /!*console.log(666);*!/
+    /!*if(i == 3){
+      break;//结束循环
+    }*!/
+
+  }*/
+
+  var arr1 = [21,321,12,1,15,32,21,15,121,15];
+  for (var i = 0;i<arr1.length;i++){
+    if (arr1[i] == 15){
+      console.log(i);
+      break;
+    }
+  }
+  var arr2 = [true,false,123,152,"24120","315",true,211,false,'152'];
+  var stringArr = [];
+  var numberArr = [];
+  var booleanArr = [];
+  for(var i = 0;i<arr2.length;i++){
+    if(typeof arr2[i] === "string"){
+      stringArr.push(arr2[i]);
+    }else if (typeof arr2[i] === "number"){
+      numberArr.push(arr2[i]);
+    }else{
+      booleanArr.push(arr2[i]);
+    }
+  }
+  console.log(stringArr);
+  console.log(numberArr);
+  console.log(booleanArr);
+</script>

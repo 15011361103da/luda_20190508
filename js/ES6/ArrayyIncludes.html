@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ES6：数组的新方法----includes（）</title>
+  <script src="./jquery-3.4.1.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  //Array.prototype.includes方法返回一个布尔值，表示某个数组是否包含给定的值，与字符串的includes方法类似。ES2016 引入了该方法。
+  //该方法的第二个参数表示搜索的起始位置，默认为0。如果第二个参数为负数，则表示倒数的位置，
+  // 如果这时它大于数组长度（比如第二个参数为-4，但数组长度为3），则会重置为从0开始。
+  $(document).ready(function(){
+    //第一个：
+    var arr = [123,12,15,1321,1,4,8,956,15,{name:'ludA'}];
+    console.log("是否包含15这个元素："+arr.includes(15));
+    console.log("从第九个元素开始查找是否包含15这个元素："+arr.includes(15,9));
+
+    //第二个：默认参数值
+    function test(x,y){   //ES6 允许为函数的参数设置默认值，即直接写在参数定义的后面::test(x,y='默认值'){ 。
+      console.log("y的值====="+y);
+      if(typeof y === "undefined"){   //通常需要先判断一下参数y是否被赋值，如果没有，再等于默认值。
+        y = "默认值";   //设置默认值
+      }
+      console.log(x,y);
+    }
+    test("hello");   //y等于空字符串的时候，也会使用默认值！
+    //==========
+    function Point(x = 0, y = 0) {
+      this.x = x;
+      this.y = y;
+    }
+
+    const p = new Point();
+    p // { x: 0, y: 0 }
+    console.log(p)
+    //console.log(typeof p)  //object
+  })
+</script>

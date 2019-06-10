@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/js/ES6/ArrayyIncludes.html" line="18" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="25eb19cd-2ee4-4aa8-9b9f-1e70ace59c6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/ES6/ArrayFind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/ES6/ArrowsFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/ES6/DefaultParame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/ES6/NumberIsInteger.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/ES6/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ES6/ArrayyIncludes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/火星时代/For-break.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/火星时代/Typeof.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/ES6/ArrowsFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/ES6/ArrowsFunction.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +34,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ES6/ArrayFind.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="552">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ES6/ArrayyIncludes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/火星时代/Typeof.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/火星时代/For-break.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -47,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ES6/ArrowsFunction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="345">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -96,6 +125,9 @@
         <option value="$PROJECT_DIR$/js/ES6/ArrayFind.html" />
         <option value="$PROJECT_DIR$/js/ES6/NumberIsInteger.html" />
         <option value="$PROJECT_DIR$/js/ES6/ArrowsFunction.html" />
+        <option value="$PROJECT_DIR$/js/ES6/ArrayyIncludes.html" />
+        <option value="$PROJECT_DIR$/js/火星时代/Typeof.html" />
+        <option value="$PROJECT_DIR$/js/火星时代/For-break.html" />
       </list>
     </option>
   </component>
@@ -111,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,13 +165,12 @@
               <item name="luda" type="b2602c69:ProjectViewProjectNode" />
               <item name="luda" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="火星时代" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,19 +238,21 @@
       <workItem from="1557750119291" duration="3284000" />
       <workItem from="1557797796748" duration="5917000" />
       <workItem from="1557973698044" duration="7855000" />
-      <workItem from="1559721794938" duration="13833000" />
+      <workItem from="1559721794938" duration="14508000" />
+      <workItem from="1559793073328" duration="10366000" />
+      <workItem from="1560147924000" duration="4733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85725000" />
+    <option name="totallyTimeSpent" value="101499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2061012" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2061012" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -406,13 +440,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ES6/NewCharacter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ES6/NewCharacter.html" />
     <entry file="file://$PROJECT_DIR$/js/ES6/DefaultParame.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -422,8 +450,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ES6/ArrayFind.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="552">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ES6/ArrayyIncludes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -436,8 +471,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ES6/ArrowsFunction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/火星时代/Typeof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/火星时代/For-break.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
         </state>
       </provider>
     </entry>

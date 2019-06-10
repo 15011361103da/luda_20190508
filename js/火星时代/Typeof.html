@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>typeof</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  var a;
+  console.log(a)  //undefined
+  a = 10;
+  var a = 15;
+  console.log(a);
+
+  var arr = [22,"22",true,[]];
+  console.log(arr[3])
+  console.log(typeof arr);
+  console.log(10+true);
+  console.log('10'+false);
+  console.log(NaN + 10);
+  console.log(1=='1');
+  console.log(1==='1');
+  console.log(arr.length);
+  console.log(arr.push(32));
+  console.log(arr);
+  console.log(typeof NaN); //NaN 也属于number
+  function f() {
+
+  }
+  console.log(typeof f);
+  console.log(typeof "666");
+  //debugger;
+  var b;
+  console.log(typeof b)
+
+  //if判断条件默认为false：0  NaN  null undefined 空字符串
+  //if判断条件默认为true：非零数字、非空字符串、对象、数组、对象集合
+  if([1,2,3]){
+    console.log("此条件默认为true");
+  }else{
+    console.log("此条件默认为false");
+  }
+</script>

@@ -13,8 +13,17 @@
     * 因此，保留它们可能是一个好习惯：
     */
     $(document).ready(function () {
-      var test = x => x+1;
+
+      const test = x => {
+        //console.log(this);
+        return x+1;
+      };
       console.log(test(5));
+
+      /*function luda(){
+        console.log(this)
+      }
+      luda();*/
     })
   </script>
 </body>
