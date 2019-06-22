@@ -1,0 +1,71 @@
+<!--  <!DOCTYPE html>声明H5文档，声明当前网页按照HTML5标准编写-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--告诉浏览器需要使用UTF-8解码-->
+  <!--meta标签用来设置网页的元数据，比如网页的字符集、关键字、-->
+  <meta charset="UTF-8">
+  <!--5秒后重定向到百度-->
+  <!--<meta http-equiv="refresh" content="5;url=http://www.baidu.com"/>-->
+  <title>标签属性</title>
+  <style>
+    img{
+      width: 100px;
+    }
+    span.p1{
+      background-color: yellow;
+    }
+    /*正常的连接*/
+    /*.a1:link{
+      color: yellow;
+    }*/
+    /*访问过的连接*/
+    .a1:visited{
+      color: green;
+    }
+    /*鼠标移入的时候*/
+    .a1:hover{
+      color: #5963ec;
+    }
+    /*点击的过程中*/
+    .a1:active{
+      color: #24282b;
+    }
+    /*获取焦点*/
+    input:focus{
+      background-color:red
+    }
+    /*标签选中的样式*/
+    p::-moz-selection{
+      color: peru;
+    }
+    p::selection{
+      color: peru;
+    }
+    .pp{
+      font-family: "Segoe Script";
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:blue">6666666 <font color="red">66666</font>   6666666</h1>
+  <!--实体：&lt   &gt-->
+  <p>a &lt b &gt c</p>
+  <img src="img/2.gif" alt="这是有一个大松鼠">
+  <!-- 内联框架 ：可以引入一个外部的页面，但是内联框架中的内容不会被搜索引擎检索-->
+  <iframe src="https://www.baidu.com/"></iframe><br/>
+  <hr class="hhr" style="background-color: red;border: none;height: 2px;opacity: .1;width: 50%" />
+  <!--target:可以设置连接打开的位置   _blank：在新的窗口打开连接-->
+  <a href="http://www.baidu.com" target="_blank">连接</a>
+  <p class="p1">666</p>
+  <p class="p1">77</p>
+  <p class="p1">888 <span class="p1">555</span> </p>
+  <span class="p1">999 <span class="p1">555552415</span> </span>
+
+  <!--伪类选择器-->
+  <a class="a1" href="#">普通的连接</a>
+
+  <input type="text" style="">
+  <p class="pp">48613132132</p>
+</body>
+</html>
