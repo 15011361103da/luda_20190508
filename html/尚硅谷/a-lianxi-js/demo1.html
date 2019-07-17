@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+  <style>
+    .s1{
+      display: inline-block;
+      width: 80px;
+    }
+  </style>
+  <script>
+    document.write("<p id='ld' style='margin: 0;padding:0'>鹿达</p>");
+    document.write(typeof (typeof null));  //sttring
+    document.write("</br>");
+    document.write(typeof undefined);
+    document.write("</br>"+String(null));
+    document.write("</br>");
+    document.write(parseInt("35145sdf155sc12"));
+    document.write("</br>");
+    document.write(+null);
+    document.write(!!"sdf");
+    document.write("</br>");
+    document.write(NaN||2);
+    document.write("</br>");
+    console.time("test");
+    for(var i = 1;i<10;i++){
+      for(var j = 1;j<=i;j++){
+        document.write("<span class='s1'>"+j+"*"+i+"="+i*j+"</span>");
+        /*document.write("&nbsp&nbsp&nbsp&nbsp")*/
+      }
+      document.write("</br>");
+    }
+    console.timeEnd("test");
+
+    var obj = new Object();
+    obj[name] = 321;
+    document.write(obj[name]);
+    document.write("<br/>");
+    var obj1 = obj;
+    obj[name] = 987;
+    var obj2 = {name:655444};
+    obj = obj2;
+    document.write(obj1[name]);
+    /*var num = new Number();
+    num.name="asdas";
+    for(var key in num){
+      console.log(key);
+    }*/
+    /*console.log(asd);  //undefined  变量声明提前，但是不会提前赋值
+    var asd = 123;
+    console.log(asd);   //123*/
+    /*console.log(obj.jhv);*/
+    /*function Person(name) {
+      this.name = name;
+    }
+    var per = new Person("666");
+    per.toString = function(){
+      return "321555554"
+    }
+    console.log(per.toString());*/
+    //数组去重
+   /* var arr = [1,2,3,4,5,1,2,4,5,5,5,5,1,1,1,1];
+    for(var i = 0;i<arr.length;i++){
+      for(var j = i+1;j<arr.length;j++){
+        if(arr[i] == arr[j]){
+          arr.splice(j,1);
+          j--;
+        }
+      }
+    };
+    console.log(arr);*/
+
+   /*for(var i = 0;i<10;i++){
+     console.log(Math.round(Math.random()*30+120));
+   }*/
+
+   /*var reg = /a[^ab]/;
+   console.log(reg.test("aasd"));*/
+   /*var reg = /[^as]/;
+   console.log(reg.test("q"));*/
+   /*var ld = document.getElementById("ld");
+   console.log(ld);
+   ld.innerText = "<h1>666</h1>";*/
+  </script>
+</head>
+<body>
+
+</body>
+</html>

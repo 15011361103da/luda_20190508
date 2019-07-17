@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+</head>
+<body>
+    <div id="">
+      <button type="button" id="btn1">绑定一个事件</button>
+    </div>
+</body>
+
+<script>
+  window.onload = function () {
+    var btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click",function(){
+      alert(666);
+    },false);
+    btn1.addEventListener("click",function(){
+      alert(688);
+    },false);
+  }
+</script>
+</html>

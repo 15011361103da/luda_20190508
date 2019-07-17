@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/DomCRUD.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/DomCrud1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/Target.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/addEventListener.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/mouseMove.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/mouseWheel.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/scroll.html" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom增删改查</title>
+  <style>
+    .tab{
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 50%;
+    }
+    .tab td{
+      border: 1px solid #000000;
+    }
+    #for{
+      border: 1px solid;
+      width: 230px;
+      margin: 10px auto;
+      text-align: center;
+    }
+    #div1{
+      width: 255px;
+      height: 233px;
+      background-color: #ddee77;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <table class="tab">
+      <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>工资</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>鹿达</td>
+        <td>27</td>
+        <td>12000</td>
+        <td><a href="javascript:">Delete</a></td>
+      </tr>
+      <tr>
+        <td>修宇川</td>
+        <td>26</td>
+        <td>8000</td>
+        <td><a href="javascript:">Delete</a></td>
+      </tr>
+    </table>
+    <div id="for">
+      姓名：<input type="text" id="name"><br/>
+      年龄：<input type="text" id="age"><br/>
+      工资：<input type="text" id="salary">
+      <button id="btn" type="submit" style="">添加</button>
+    </div>
+    <div id="div1" style=""></div>
+    <button class="btn1">获取css属性</button>
+  </div>
+</body>
+<script>
+  window.onload = function () {
+    var tab = document.getElementsByClassName("tab");
+    var alist = tab[0].getElementsByTagName("a");
+    for(var i = 0;i<alist.length;i++){
+      alist[i].onclick = function(){
+        //alert(this.parentNode.parentNode);
+
+        var fl = confirm("确认删除"+"");
+        if(fl){
+          this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode)
+        }
+
+      }
+    };
+    var btn = document.getElementById("btn");
+    btn.onclick = function () {
+      var name = document.getElementById("name").value;
+      var age = document.getElementById("age").value;
+      var salary = document.getElementById("salary").value;
+      var tr = document.createElement("tr");
+      tr.innerHTML = "<td>"+name+"</td>"+
+                     "<td>"+age+"</td>"+
+                     "<td>"+salary+"</td>"+
+                     "<td><a href='javascript:' id='as'>Delete</a></td>";
+      var tbody = document.getElementsByTagName("tbody");
+
+      tbody[0].appendChild(tr);
+      var a = document.getElementById("as");
+      a.onclick = function(){
+        var fl = confirm("确认删除"+"");
+        if(fl){
+          this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode)
+        }
+
+      };
+
+      return false;
+    };
+
+    var btn1 = document.getElementsByClassName("btn1");
+    var div1 = document.getElementById("div1");
+    btn1[0].onclick = function(){
+      //console.log(div1.style.backgroundColor);
+      //   console.log(div1.currentStyle.width);   //IE
+      console.log(getComputedStyle(div1,null).width);
+    }
+  }
+</script>
+</html>

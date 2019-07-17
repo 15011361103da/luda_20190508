@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM操作</title>
+</head>
+<body>
+  <div>
+    <input id="lan" type="checkbox" name="qiu" value="篮球"/><label for="lan">篮球</label>
+    <input id="tai" type="checkbox" name="qiu" value="台球"/>台球
+    <input id="yu" type="checkbox" name="qiu" value="羽毛球"/>羽毛球
+    <input id="wang" type="checkbox" name="qiu" value="网球"/>网球
+    <button id="quan">全选</button>
+    <button id="quanbu">全不选</button>
+
+    <ul>
+      <li>上海</li>
+      <li id="bj">北京</li>
+      <li>天津</li>
+      <li id="last">定兴</li>
+    </ul>
+  </div>
+</body>
+<script>
+  window.onload = function(){
+    var flag = false;
+    document.getElementById("quan").onclick = function(){
+      var qiu = document.getElementsByName("qiu");
+      for(var i = 0;i<qiu.length;i++){
+        if(flag){
+          qiu[i].checked = false;
+        }else{
+          qiu[i].checked = true;
+        }
+
+      }
+      flag = !flag;
+    }
+    var u = document.getElementsByTagName("ul");
+    var li = document.createElement("li");
+    li.innerHTML = "鹿达";
+    u[0].appendChild(li);
+    var bj = document.getElementById("bj");
+    var li1 = document.createElement("li");
+    li1.innerHTML = "高碑店";
+    u[0].insertBefore(li1,bj);
+  }
+
+</script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滚动条</title>
+  <style>
+    #p11{
+      width: 300px;
+      height: 400px;
+      background-color: #bfa;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="p11">请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细
+    英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请
+    仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语
+    阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔
+    细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅
+    读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细
+    英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请
+    仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅
+    读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细
+    英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读
+    请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英
+    语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请
+    仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语
+    阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔
+    细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅
+    读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细
+    英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读
+    请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英
+    语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请
+    仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语
+    阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔细英语阅读请仔
+
+  </p>
+  <input id="che" type="checkbox" disabled="disabled">我已经仔细阅读<br/>
+  <div id="dArea" style="width: 300px;height: 200px;border: 1px solid"></div>
+  <div id="dShow" style="height:20px; width: 300px;border: 1px solid;margin-top: 20px"></div>
+  <div id="move" style="height: 200px;width: 200px;background-color: red;position: absolute;"></div>
+</body>
+<script>
+  window.onload = function () {
+    var p111 = document.getElementById("p11");
+    p11.onscroll = function(){
+      //console.log(p11.clientHeight);
+      if(p11.scrollHeight - p11.scrollTop === p11.clientHeight){
+        var che = document.getElementById("che");
+        che.disabled = false;
+      }
+    };
+    var dArea = document.getElementById("dArea");
+    var dShow = document.getElementById("dShow")
+    dArea.onmousemove = function (event) {
+      dShow.innerHTML = "x=" + event.clientX + "y=" +event.clientY;
+    };
+    var move = document.getElementById("move");
+    //div跟随鼠标移动案例
+    document.onmousemove = function (event) {
+      event = event || window.event;
+      //兼容Ie和chrome 、火狐
+      var st = document.body.scrollTop || document.documentElement.scrollTop;
+      var sl = document.body.scrollLeft || document.documentElement.scrollLeft;
+      move.style.left = event.clientX +sl+ "px";
+      move.style.top = event.clientY +st+ "px";
+      console.log(event.clientY)
+    }
+    console.log(document.div);
+  }
+</script>
+</html>
