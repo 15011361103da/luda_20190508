@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件</title>
+  <style>
+    .div1{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text">
+    <div id="luda" class="div1"></div>
+  </div>
+</body>
+</html>
+<script>
+  window.onload = function(){
+
+    var inp = document.getElementsByTagName("input");
+    inp[0].onkeydown = function (event) {
+      event = event || window.event;
+      if(event.keyCode <= 57 && event.keyCode>=48 || event.keyCode>=96 && event.keyCode<=105){
+        return false; //不能输入数字
+      }
+      console.log(event.keyCode)
+    }
+    var div1 = document.getElementsByClassName("div1");
+    document.onkeydown = function (event) {
+      event = event || window.event;
+      //console.log(event.keyCode);
+      /*if(event.keyCode == 37){
+        //left
+      }else if(event.keyCode == 38){
+        //top
+      }else if(event.keyCode == 39){
+        //right
+      }else{
+        
+      }*/
+      switch (event.keyCode) {
+        case 37:
+          console.log(event.keyCode);
+          div1[0].style.left = div1[0].offsetLeft - 10 + "px";
+          break;
+        case 39:
+          div1[0].style.left = div1[0].offsetLeft + 10 + "px";
+          break;
+        case 38:
+          div1[0].style.top = div1[0].offsetTop - 10 + "px";
+          break;
+        case 40:
+          div1[0].style.top = div1[0].offsetTop + 10 + "px";
+      }
+    }
+  }
+</script>

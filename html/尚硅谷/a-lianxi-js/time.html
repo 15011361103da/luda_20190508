@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计时器</title>
+  <script>
+    function date2str(x,y) {
+      var z ={y:x.getFullYear(),M:x.getMonth()+1,d:x.getDate(),h:x.getHours(),m:x.getMinutes(),s:x.getSeconds()};
+      return y.replace(/(y+|M+|d+|h+|m+|s+)/g,function(v) {return ((v.length>1?"0":"")+eval('z.'+v.slice(-1))).slice(-(v.length>2?v.length:2))});
+    }
+    function move(fun){
+      var count = 1
+      var timer = setInterval(function () {
+        count++;
+        if(count == 2){
+          alert("动画结束");
+          clearInterval(timer);
+          fun();
+        }
+      },5000)
+    }
+    window.onload = function () {
+      var div1 = document.getElementById("div1");
+      var count = 0;
+      var date;
+      var timer1 = setInterval(function () {
+        count++;
+        date = date2str(new Date(),"yyyy-MM-dd hh-mm-ss");
+        div1.innerHTML = date;
+        if(count == 10){
+          clearInterval(timer1);
+        }
+      },1000)
+      setTimeout(function () {
+        console.log("异步")
+      },3000)
+      console.log("我是在settimeout之前");
+      move(function () {
+        console.log("回调函数和执行了")
+      })
+    }
+  </script>
+</head>
+<body>
+  <div id="div1">
+
+  </div>
+</body>
+</html>

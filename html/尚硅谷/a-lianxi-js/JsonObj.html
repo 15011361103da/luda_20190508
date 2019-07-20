@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON对象</title>
+</head>
+<body>
+  <div>
+    <ul id="u1">
+    </ul>
+
+    <select name="" id="sel">
+      <option>请选择</option>
+      <option value="河北">河北</option>
+      <option value="四川">四川</option>
+      <option value="山东">山东</option>
+    </select>
+  </div>
+</body>
+</html>
+
+<script>
+  window.onload = function(){
+    var u1 = document.getElementById("u1");
+    var li1 = u1.getElementsByTagName("li");
+    console.log(li1[0].firstChild.nodeValue);
+
+
+    //
+    var sel = document.getElementById("sel");
+    var opt = sel.getElementsByTagName("option");
+    for(var i = 0;i<opt.length;i++){
+      //console.log(666)
+      opt[i].onclick = function () {
+        console.log(44);
+
+      }
+    }
+    sel.onchange = function(){
+      console.log("sel数据变化了");
+
+    }
+  }
+
+  var arr = ['鹿达',"修宇川","李荣浩","那英","王力宏","庾澄庆"];
+
+  for(var i = 0;i<arr.length;i++){
+    var li = document.createElement("li");
+    li.innerHTML = arr[i]+"<button style='margin-left: 10px'>删除</button>";
+    var btn = li.querySelector("button");
+    btn.onclick = function(){
+      //console.log(this.parentNode.firstChild.nodeValue); //文本节点
+      this.parentNode.parentNode.removeChild(this.parentNode);
+
+    }
+
+    u1.appendChild(li);
+
+  }
+  function del(){
+    console.log(this)
+    /*u1.removeChild(this);*/
+  }
+  /*var json1 = '{"name":"鹿达","age":"18"}';
+  var obj = JSON.parse(json1);
+  console.log(obj.name);*/
+  function Person() {
+    console.log(this);
+
+  }
+  Person(); //window
+  var p = new Person();  //p
+
+
+
+</script>
