@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>icon</title>
+  <link rel="stylesheet" href="icomoon/style.css">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .icon-newspaper{
+      font-size: 31px;
+      color: yellowgreen;
+    }
+    .wrap{
+      width: 200px;
+      height: 200px;
+      background-color: rgba(255, 0, 0,.5);
+      color: yellow;
+    }
+    h1{
+      text-shadow:#888 5px 5px 8px;
+    }
+    h2{
+      color: white;
+      text-shadow: #666666 1px 1px 30px;
+    }
+    h1:hover{
+      transition: 1s;
+      color: white;
+      text-shadow:#666666  1px 1px 90px;
+    }
+    /*body{
+      width: 500px;
+    }*/
+    .sec{
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      width: 400px;
+      height: 160px;
+      padding: 30px 20px;
+      background: lightgray;
+     /*border: 40px solid;*/
+    }
+    .p1{
+      position: absolute;
+      width: 50%;   /* == (400px + 20px + 20px) * .5 = 220px */
+      height: 25%;  /* == (160px + 30px + 30px) * .25 = 55px */
+      margin: 5%;   /* == (400px + 20px + 20px) * .05 = 22px */
+      padding: 5%;  /* == (400px + 20px + 20px) * .05 = 22px */
+      background: cyan;
+    }
+  </style>
+</head>
+<body>
+  <span class="icon-office"></span>
+  <i class="icon-newspaper"></i>
+  <div class="wrap">
+    背景透明，文字不透明
+  </div>
+
+  <h1>文本拥有阴影</h1>
+  <h2>sdfdsfdf</h2>
+  <section class="sec">
+    <p class="p1">我的包含块</p>
+  </section>
+
+</body>
+</html>

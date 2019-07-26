@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>居中</title>
+  <style>
+    .wrap{
+      width: 500px;
+      height: 500px;
+      background-color: deeppink;
+      margin: 0 auto;
+      position: relative;
+    }
+    .inner{
+      width: 100px;
+      height: 80px;
+      background-color: #5963ec;
+      position: absolute;
+      left:50%;
+      top: 50%;
+      transform: translate3d(-50%,-50%,0);
+      /*top:0;
+      bottom: 0;
+      left:0;
+      right:0;
+      margin: auto;*/
+    }
+    .wrap1{
+      width: 500px;
+      height: 500px;
+      background-color: #5963ec;
+      text-align: center;
+    }
+    .wrap1:after{
+      content: "";
+      height: 100%;
+      width: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .wrap1 img{
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="wrap">
+      <div class="inner"></div>
+    </div>
+    <div class="wrap1">
+      <img src="../demo01/img/2.gif" alt="" style="width: 150px">
+    </div>
+  </div>
+</body>
+</html>

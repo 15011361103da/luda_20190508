@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+  <style>
+    div{
+      display: none;
+      width: 200px;
+      height: 200px;
+      background-color: #5963ec;
+    }
+    div:target{
+      display: block;
+    }
+    a:link{
+      color: yellowgreen;
+    }
+    a:hover{
+      font-size: 24px;
+      color: #d29d71;
+    }
+    a:visited{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <a href="#div1">div1</a><br/>
+  <a href="#div2">div2</a>
+
+  <div id="div1">
+    div1
+  </div>
+  <div id="div2">
+    div2
+  </div>
+
+</body>
+</html>

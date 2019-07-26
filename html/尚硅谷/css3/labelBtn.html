@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自治单选按钮</title>
+  <style>
+    label{
+      float: left;
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+      overflow: hidden;
+      position: relative;
+      border-radius: 50%;
+    }
+    label > span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    input{
+      position: absolute;
+      top: -50%;
+      left:-50%;
+    }
+    input:checked + span{
+      background-color: #24282b;
+    }
+  </style>
+</head>
+<body>
+  <label>
+    <input type="radio" name="luda">
+    <span></span>
+  </label>
+  <label>
+    <input type="radio" name="luda">
+    <span></span>
+  </label>
+  <label>
+    <input type="radio" name="luda">
+    <span></span>
+  </label>
+</body>
+</html>

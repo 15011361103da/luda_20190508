@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      min-width: 600px;
+    }
+    div{
+      height: 200px;
+    }
+    .left{
+      width: 200px;
+      background-color: green;
+      float: left;
+      opacity: 0.8;
+    }
+    .right{
+      float: right;
+      width: 100%;
+
+
+      background-color: deeppink;
+      overflow: hidden;
+
+    }
+    .img img{
+      width: 200px;
+    }
+    .img{
+      float: left;
+    }
+    .des{
+      background-color: #b0b3a2;
+      overflow: hidden;
+      padding-left: 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">left</div>
+  <div style="overflow: hidden"><div class="right">right</div></div>
+  <div class="img"><img src="../demo01/hello/1.gif" alt=""></div>
+  <div class="des">
+    此物品贱卖此物品贱卖此物品贱卖此物品贱卖此物品贱卖此物品贱卖<br/>
+    此物品贱卖<br/>
+    此物品贱卖<br/>
+    此物品贱卖<br/>
+    此物品贱卖<br/>
+    此物品贱卖<br/>
+    此物品贱卖<br/>
+
+  </div>
+</body>
+</html>
