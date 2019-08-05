@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex布局</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .content{
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 50px auto;
+    }
+    #wrap{
+      width:200px;
+      height: 200px;
+      border: 1px solid;
+
+      display: flex;
+      /*改变主轴方向*/
+      flex-direction: row;
+      /*主轴*/
+      justify-content: start;
+      /*管理侧轴方向的富裕空间*/
+      align-items:flex-start;/*等高布局:stretch*/
+      /*换行*/
+      flex-wrap: nowrap;
+      /*也是管理侧轴方向的富裕空间，以所有的项目为一个整体*/
+      align-content:center;
+    }
+    #wrap > .div1{
+      width: 50px;
+      height: 50px;
+      border: 1px red solid;
+      text-align: center;
+      line-height: 50px;
+     /*-webkit-box-flex: 1;*/
+      flex-grow: 1;
+
+    }
+    #wrap > .div1:nth-child(1){
+      /*flex-grow: 4;*/
+      flex-basis: 50px;
+      flex-grow: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div id="wrap">
+      <div class="div1">1</div>
+      <div class="div1">2</div>
+      <div class="div1">3</div>
+      <div class="div1">4</div>
+      <div class="div1">5</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>闭包</title>
+  <script>
+    window.onload = function () {
+      var btns = document.getElementsByTagName("button");
+      /*for (var i = 0; i<btns.length;i++){
+        var index = i;
+        btns[i].index = index;
+        btns[i].onclick = function () {
+          alert(this.index+1)
+        }
+      }*/
+      /*闭包*/
+      for (var i = 0; i<btns.length;i++){//此处for中的var i 为全局变量
+        (function (i) {
+          btns[i].onclick = function () {
+            alert(i+1)
+          }
+        })(i)
+      }
+      //
+      function f1() {
+        var a = 1;
+        return function f2() {
+          console.log(a++);
+        }
+      }
+      var res = f1();
+      res();
+      res();
+
+      //
+      function f4() {
+        var ttt = 1;
+        function f5() {
+          ttt++;
+          console.log(ttt+"***");
+        }
+        return f5;
+      }
+      var rrr = f4();
+      rrr();
+      rrr();
+      rrr = null;
+      //rrr();
+      rrr = f4();
+      rrr();
+      rrr();
+      (function () {
+        var yyy = 8;
+        function f8() {
+          console.log(++yyy + "/////")
+        }
+        function f7() {
+          console.log(--yyy + '//////')
+        }
+        window.f8 = f8;
+        window.f7 = f7;
+      })();
+      f7();
+      f7();
+
+      function Person(name,age){
+        this.name = name;
+        this.age = age;
+      }
+      //借用构造函数继承
+      function Son(name,age) {
+        //将Person的this改为Son的this并调用
+        Person.call(this,name,age);
+        //console.log(this);
+        //this.name = name
+      }
+      var son = new Son("luda",18);
+      console.log(son.name,son.age)
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <button>1</button>
+    <button>1</button>
+    <button>1</button>
+  </div>
+</body>
+</html>

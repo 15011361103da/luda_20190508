@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>let块级作用域</title>
+</head>
+<body>
+  <div>
+
+  </div>
+</body>
+</html>
+<script>
+  window.onload = function () {
+
+    /*console.log(luda);*/
+    /*let luda = "luda";
+    console.log(luda);*/
+    function f() {
+
+    }
+    let test = {
+      b1:{},
+      b2:[1,2,function () {
+        
+      }]
+    }
+    let asd = [];
+    console.log(asd instanceof Array);
+    console.log(typeof f);
+    console.log(typeof test.b2[2]);
+    let a = 3;
+    function fn(b) {
+      a = b+1;
+    }
+    fn(a);
+    console.log(a);
+    console.log(typeof [])
+  }
+</script>

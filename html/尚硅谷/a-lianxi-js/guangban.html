@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>光斑动画</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html,body{
+      background-color: black;
+      height: 100%;
+      text-align: center;
+      overflow: hidden;
+    }
+    .wrap{
+      display: inline-block;
+      font:bold 80px "微软雅黑";
+      color:rgba(120,12,88,.5);
+      -webkit-background-clip: text;
+      background-image: linear-gradient(120deg,rgba(255,255,255,0) 120px,rgba(255,255,255,1) 180px,rgba(255,255,255,0) 240px);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" id="wrap">
+    shangguigu尚硅谷
+  </div>
+</body>
+</html>
+<script>
+  window.onload = function () {
+    var wrap = document.getElementById("wrap");
+    var index = 0;
+    setInterval(function () {
+      index+=20;
+      wrap.style.backgroundPosition = index+"px";
+    },30)
+  }
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>过度transition</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    #wrap{
+      width: 100px;
+      height: 100px;
+      background-color: #5963ec;
+      transition-property: width;
+      transition-duration: 2s;
+      margin: 0 auto;
+    }
+    #wrap:hover{
+      margin-top: 500px;
+      transform:rotate(454deg);
+      transition: 2s;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div id="wrap"></div>
+  </div>
+</body>
+</html>
+<script>
+  //注意初次渲染的时候，过度有坑（js代码执行完的时候，还没有渲染，所以此时已经将width修改为了300px，渲染出来的直接就是300px）
+  window.onload = function () {
+    var wrap = document.querySelector("#wrap");
+    wrap.style.width = "300px";
+  }
+
+</script>

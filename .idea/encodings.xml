@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs/modules/modules1.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs/modules/modules2.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs/modules/modules3.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs2/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs2/js/src/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs2/js/src/modules1.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs2/js/src/modules2.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs2/js/src/modules3.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/CommonJs2/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/Array1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/ECMA6_let.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/Generator1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/Let1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/Promise1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/Symbol1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/ECMA6/copy.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/JavaScriptHeight/Closure.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/JavaScriptHeight/Prototype1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/JavaScriptHeight/test.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/Bom_navigator.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/DomCRUD.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/DomCrud1.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/JsonObj.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/Media/Media.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/Target.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/addEventListener.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/flex/Flex.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/flex/Flex1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/flex/Flex2.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/forEachTest.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/mouseMove.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/mouseWheel.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/onkeyDownUp.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/scroll.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/time.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/a-lianxi-js/xyz3D.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/ajax/Ajax1.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/ajax/Ajax2.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/ajax/jq/jQuery3.4.1.js" charset="UTF-8" />
@@ -25,6 +50,9 @@
     <file url="file://$PROJECT_DIR$/html/尚硅谷/css3/icon.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/css3/labelBtn.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html/尚硅谷/css3/nth_child.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/es6_babel_browserify/.babelrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/es6_babel_browserify/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/html/尚硅谷/es6_babel_browserify/package.json" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

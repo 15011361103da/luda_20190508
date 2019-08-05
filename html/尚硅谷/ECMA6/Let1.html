@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>let</title>
+</head>
+<body>
+  <div>
+    <button>1</button>
+    <button>22</button>
+    <button>3</button>
+  </div>
+</body>
+</html>
+<script>
+  window.onload = function () {
+    let a = 1;
+    //a = 2;
+    console.log(a);
+
+    var btn = document.getElementsByTagName("button");
+    //方法一
+    /*for(var i = 0;i<btn.length;i++){
+      btn[i].index = i;
+      btn[i].onclick = function () {
+        alert(this.index+1);
+      }
+    }*/
+    //方法二
+    /*for(var i = 0;i<btn.length;i++){
+      /!*立即执行函数与闭包，就是把i分别放入函数作用域中，成为独立的空间*!/
+      (function (i) {
+        btn[i].onclick = function () {
+          alert(i+1)
+        }
+      })(i)
+    }*/
+    //方法三
+    //ES6语法：let块级作用域
+    for(let i = 0;i<btn.length;i++){
+      btn[i].onclick = function () {
+        alert(i+1);
+      }
+    }
+  }
+</script>

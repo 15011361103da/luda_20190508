@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise构造函数</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  window.onload = function () {
+    var promise = new Promise((resolve,reject) =>{
+      let a = 666;
+      //resolve(a);
+      reject(999);
+    });
+
+
+    promise.then(
+      //succence
+      (data) => {
+        console.log(data)
+      },
+      //error
+      (error) => {
+        console.log(error)
+      }
+    )
+  }
+</script>

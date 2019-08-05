@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>深拷备</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  /*深拷贝针对的数据是：对象或数组*/
+  window.onload = function () {
+    let obj = {name:"luda",age:18,msdsn:{name:"xiu",age:19}};
+    /*let res = "666";
+    let type = Object.prototype.toString.call(res);
+    console.log(type);*/
+    //检测目标数据的类型
+    function checkType(target) {
+      return Object.prototype.toString.call(target).slice(8,-1);
+    }
+    function clone(target) {
+      let res;
+      let type = checkType(target);
+      if(type === "Object"){
+        res = {};
+      }else if(type === "Array"){
+        res = [];
+      }else{
+        res = target;
+      }
+
+      for(let i in target){
+        let value = target[i];
+        if(checkType(value) === "Object" || checkType(value) === "Array"){
+          res[i] = clone(value);
+        }else{
+          res[i] = value;
+        }
+      }
+      return res;
+    }
+    let obj2 = clone(obj);
+    console.log(obj2);
+    obj2.name = "494212";
+    console.log(obj,obj2);
+  }
+</script>

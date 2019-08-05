@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>渐变</title>
+  <style>
+    html,body{
+      height: 100%;
+      overflow: hidden;
+    }
+    .wrap{
+      width: 500px;
+      height: 500px;
+      text-align: center;
+      background-image: linear-gradient(120deg,red 10%,yellow 70%,deeppink 80%);
+    }
+    .change{
+      width: 30px;
+      height: 300px;
+      border: 1px solid;
+      overflow: hidden;
+      margin: 0 auto;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+    .inner{
+      height: 600px;
+      background-color: pink;
+      background-image: repeating-linear-gradient(135deg,black 0px,black 10px,white 10px,white 20px);
+    }
+    /*.inner:hover{
+      margin-top: -300px;
+      transition: 3s;
+
+    }*/
+    .wrap:after{
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+    img{
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<div style="height:100%;overflow: auto">
+  <div class="wrap">
+    <img src="./img/pic2.jpg" alt="">
+  </div>
+  <div class="change">
+    <div id="inner" class="inner"></div>
+  </div>
+</div>
+
+</body>
+<script>
+  window.onload = function(){
+    var inner = document.getElementById("inner");
+    var index = 0;
+    inner.onmouseup = function () {
+      setInterval(function () {
+        if(index == 300){
+          index=0;
+        }
+        console.log(index)
+        index++;
+        inner.style.marginTop = -index+"px";
+      },1000/600)
+    }
+  }
+</script>
+</html>

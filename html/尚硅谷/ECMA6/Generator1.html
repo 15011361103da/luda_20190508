@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6异步编程</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  window.onload = function () {
+    function* fun() {
+      console.log("kai shi");
+      yield 666;
+      console.log("zan tiing ji xu");
+      yield "hello";
+      console.log(999);
+    }
+    let gener = fun(); //返回的是指针对象
+    console.log(gener);
+    let res = gener.next();
+    //console.log(res.value,res.done); //是否遍历结束
+    console.log(gener.next());
+    console.log(gener.next());
+    console.log(gener.next());
+
+  }
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>原型prototype</title>
+  <script>
+    window.onload = function () {
+      console.log(Date.prototype,typeof Date.prototype);
+      function fun() {
+
+      }
+      console.log(fun.prototype,typeof fun.prototype);
+      fun.prototype.test = function () {
+        console.log("test");
+      }
+      var a = new fun();
+      a.test();
+      //在函数中有prototype属性指向原型对象，而原型对象中又有constructor属性指向函数对象
+      console.log(fun.prototype.constructor === fun);
+      console.log(fun.prototype.constructor === fun);
+
+      //
+      console.log(a.__proto__);
+      //console.log(Object.prototype instanceof Object,Object.prototype)
+      console.log(Object.prototype.__proto__);
+      //设置对象属性时，不会查找原型链，如果当前对象没有此属性，直接添加属性并设置其值，
+      //读取对象属性时，会自动到原型链查找
+      function qqq() {
+
+      }
+      var sd = new qqq();
+      qqq.prototype.test = 688;
+      //sd.test = 666;
+      console.log(sd.test)//读取对象属性时，会现在自身查找，如果没有然后自动到原型链查找
+      var f2 = new qqq();
+      console.log(f2.test)
+      f2.__proto__.test = 999;
+      console.log(sd.test);
+
+      var b = 5;
+      function w() {
+        console.log(b);
+        var b = 8;
+      }
+      w();
+      //console.log(wer)
+    }
+  </script>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
